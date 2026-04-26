@@ -180,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFavorites();
 });
 
-// Pop-up на странице покупки абонемента
 function initBuyPopup(): void {
   const buyForm = document.getElementById('buyForm') as HTMLFormElement | null;
   const popup = document.getElementById('popup');
