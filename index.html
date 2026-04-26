@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес Клуб</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="header-logo"><img src="logo1.svg" alt="Логотип компании" class="logo"></a>
+    <nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню">☰</button>
+        <ul id="menu">
+            <li><a href="index.html#home">Главная</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="product.html">Абонементы</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="home" class="main-section">
+        <div class="container">
+            <h2>СИЛА В ТЕБЕ! И В СПОРТЕ...</h2>
+            <h1><mark class="blue">СИЛА</mark>- ЭТО ФИТНЕС-КЛУБ ДЛЯ ТЕХ,
+КТО СЕРЬЁЗНО НАСТРОЕН</h1>
+            <p>Сила - это первый Самарский фитнес-клуб направленный на молодое поколение.</p>
+            <button><a href="buy.html">Записаться</a></button>
+        </div>
+    </section>
+
+      <div class="slider-section">
+          <div class="slider-container">
+              <div class="slider-wrapper" id="sliderWrapper">
+                  <div class="slide"><img src="slider1.png" alt="Фото 1" class="rounded-media"></div>
+                  <div class="slide"><img src="slider2.png" alt="Фото 2" class="rounded-media"></div>
+                  <div class="slide"><img src="slider3.png" alt="Фото 3" class="rounded-media"></div>
+              </div>
+
+              <button class="slider-btn btn-prev" id="prevBtn" aria-label="Предыдущий слайд">‹</button>
+              <button class="slider-btn btn-next" id="nextBtn" aria-label="Следующий слайд">›</button>
+              <div class="dots" id="dots"></div>
+          </div>
+      </div>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service">
+                <h3>Тренировки</h3>
+                <p>Персональные тренировки для достижения ваших целей.</p>
+            </div>
+            <div class="service">
+                <h3>Групповые занятия</h3>
+                <p>Занятия для группы с тренером, включая йогу, пилатес и другие направления.</p>
+            </div>
+            <div class="service">
+                <h3>Питание и консультации</h3>
+                <p>Консультации по питанию и составление диеты для лучшего результата.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Наш фитнес клуб существует более 1 года, предоставляя качественные тренировки и услуги. Мы гордимся профессиональными тренерами и индивидуальным подходом к каждому клиенту.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Есть вопросы? Мы с вами свяжемся!</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" pattern="8[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+      <h2>Контактный номер: 8(987)438-33-55</h2>
+      <article>
+        <h3>Статья 1</h3>
+        <p>Краткая характеристика статьи. Здесь рассказывается о цели компании и философии бренда.</p>
+      </article>
+      <article>
+        <h3>Статья 2</h3>
+        <p>Описание услуг и направления деятельности. Подчеркнуты ключевые особенности и подход к клиентам.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Приходи на тренировку! Красивое тело к лету тебя ждет!</h3>
+    </aside>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Фитнес Клуб Сила | Все права защищены</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

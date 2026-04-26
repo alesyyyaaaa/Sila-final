@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка абонемента</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="header-logo"><img src="logo1.svg" alt="Логотип компании" class="logo"></a>
+    <nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню">☰</button>
+        <ul id="menu">
+            <li><a href="index.html#home">Главная</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="product.html">Абонементы</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <div class="container">
+        <h2>Оформление абонемента</h2>
+        <p>Оставьте заявку, и мы свяжемся с вами для подтверждения покупки.</p>
+
+        <form id="buyForm">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="plan">Выберите длительность:</label>
+            <select id="plan" name="plan" required>
+                <option value="">-- Выберите --</option>
+                <option value="1 месяц">1 месяц</option>
+                <option value="3 месяца">3 месяца</option>
+                <option value="6 месяцев">6 месяцев</option>
+                <option value="12 месяцев">12 месяцев</option>
+            </select>
+
+            <label for="plan">Выберите абонемент:</label>
+            <select id="plan" name="plan" required>
+                <option value="">-- Выберите --</option>
+                <option value="Абонимент №1">Абонимент №1</option>
+                <option value="Абонимент №2">Абонимент №2</option>
+                <option value="Абонимент №3">Абонимент №3</option>
+            </select>
+
+            <label for="message">Комментарий:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+
+        <p id="successMessage" style="display:none; color:green; margin-top:10px;">
+            Заявка отправлена! Мы скоро свяжемся с вами.
+        </p>
+    </div>
+</section>
+
+
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>Спасибо за покупку, мы с Вами свяжемся!</h2>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Фитнес Клуб Сила | Все права защищены</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

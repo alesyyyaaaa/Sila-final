@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абонементы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="index" href="index.html">
+</head>
+
+<body>
+     <header>
+    <a href="index.html" class="header-logo"><img src="logo1.svg" alt="Логотип компании" class="logo"></a>
+    <nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню">☰</button>
+        <ul id="menu">
+            <li><a href="index.html#home">Главная</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="product.html">Абонементы</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+  <h1 class="title">АБОНЕМЕНТЫ</h1>
+  <div class="cards-container">
+    <div class="card border-blue" data-id="abonement-2">
+      <h2>АБОНЕМЕНТ #2</h2>
+      <ul>
+        <li>посещение в любой день и в любое время</li>
+        <li>тренажерный зал</li>
+        <li>анализ состава тела</li>
+      </ul>
+      <div class="price">2000 рублей</div>
+      <button class="btn lime"><a href="buy.html">Купить</a></button>
+      <button class="favorite-btn" type="button">В избранное</button>
+    </div>
+
+    <div class="card border-lime" data-id="abonement-1">
+      <h2>АБОНЕМЕНТ #1</h2>
+      <ul>
+        <li>посещение в любой день и в любое время</li>
+        <li>доступ для друзей</li>
+        <li>семейный доступ</li>
+        <li>тренажерный зал</li>
+        <li>анализ состава тела</li>
+        <li>бесплатные тренировки с тренером</li>
+        <li>групповые занятия</li>
+        <li>SPA-зона</li>
+      </ul>
+      <div class="price">3500 рублей</div>
+      <button class="btn blue"><a href="buy.html">Купить</a></button>
+      <button class="favorite-btn" type="button">В избранное</button>
+    </div>
+
+    <div class="card border-blue" data-id="abonement-3">
+      <h2>АБОНЕМЕНТ #3</h2>
+      <ul>
+        <li>посещение до 12:00 или после 20:00 в любой день</li>
+        <li>доступ для друзей</li>
+        <li>семейный доступ</li>
+        <li>тренажерный зал</li>
+        <li>анализ состава тела</li>
+        <li>бесплатные тренировки с тренером</li>
+        <li>SPA-зона</li>
+      </ul>
+      <div class="price">1600 рублей</div>
+      <button class="btn lime"><a href="buy.html">Купить</a></button>
+      <button class="favorite-btn" type="button">В избранное</button>
+    </div>
+  </div>
+
+  <section class="favorites-section">
+    <div class="container">
+      <h2>Избранное</h2>
+      <p id="favorites-empty">Пока нет избранных абонементов.</p>
+      <div id="favorites-list"></div>
+    </div>
+  </section>
+
+   <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Фитнес Клуб Сила | Все права защищены</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
