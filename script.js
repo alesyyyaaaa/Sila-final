@@ -1,4 +1,3 @@
-// Автоматический слайдер
 class AutoSlider {
   constructor(config = {}) {
     this.sliderWrapper = document.getElementById('sliderWrapper');
@@ -93,7 +92,6 @@ class AutoSlider {
   }
 }
 
-// Бургер-меню
 function initBurgerMenu() {
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
@@ -109,7 +107,6 @@ function initBurgerMenu() {
   });
 }
 
-// Избранное для абонементов
 function initFavorites() {
   const favoriteButtons = document.querySelectorAll('.favorite-btn');
   const favoritesContainer = document.getElementById('favorites-list');
@@ -188,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFavorites();
 });
 
-// Pop-up на странице покупки абонемента
 function initBuyPopup() {
   const buyForm = document.getElementById('buyForm');
   const popup = document.getElementById('popup');
